@@ -3,6 +3,27 @@
 All notable changes to this project are documented here.
 Versions follow [Semantic Versioning](https://semver.org/).
 
+## [0.1.3] — 2026-09-23
+
+### Fixed
+- **The dynasty save could change itself mid-run, and the pages came out wrong.** Building a
+  playbook in step 3 refreshed the lists, which reset the save dropdown to whichever dynasty sorts
+  first. Step 4 then read that save while still using the team you had picked from the other one.
+  Your choice is now kept, and step 4 refuses to run at all if the save or team no longer matches
+  the doctrine you derived.
+- **A doctrine you just made could not be chosen anywhere else.** Every "Doctrine book" dropdown
+  was filled once when the app opened and never again — on Doctrine Fit, Depth Chart, Position
+  Changes, Roster Trim and Playbook Rebuild alike — even though the generator said the new book was
+  "now in every Doctrine book list". They refresh when you switch tabs, and straight after a derive.
+
+### Changed
+- **"Select formations" is a real picker.** It used to score your master and show you a read-only
+  list of what it had chosen. Now every set has a checkbox, the sets it rejected are listed too
+  (with what each would still add to the book), and the playbook is built from what is ticked.
+  Special-teams formations stay ticked and locked, because a playbook without them will not load.
+
+[0.1.3]: https://github.com/sdmart3/open-field-toolkit-releases/releases/tag/v0.1.3
+
 ## [0.1.2] — 2026-09-23
 
 ### Fixed
