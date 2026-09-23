@@ -3,6 +3,20 @@
 All notable changes to this project are documented here.
 Versions follow [Semantic Versioning](https://semver.org/).
 
+## [0.1.2] — 2026-09-23
+
+### Fixed
+- **The Doctrine and Call Sheet are real `.html` files now.** They were being handed to the browser
+  as blob downloads, which saved as a file called `blob` with no extension — and the Open buttons
+  did nothing at all. Both pages are written to disk every time, with proper names, and the buttons
+  open them in your browser.
+- Pages go to `Documents\Open Field Toolkit` by default. The folder box in step 4 still overrides
+  it; leaving it blank now means "use the default" rather than "don't save".
+- A doctrine whose name already ends in "Doctrine" no longer produces
+  `derived-doctrine-doctrine.html`.
+
+[0.1.2]: https://github.com/sdmart3/open-field-toolkit-releases/releases/tag/v0.1.2
+
 ## [0.1.1] — 2026-09-23
 
 ### Changed
