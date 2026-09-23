@@ -3,6 +3,21 @@
 All notable changes to this project are documented here.
 Versions follow [Semantic Versioning](https://semver.org/).
 
+## [0.1.1] — 2026-09-23
+
+### Changed
+- **No runtime prerequisite.** The app window is now published self-contained, so the .NET 8
+  Desktop Runtime is no longer needed. The only remaining dependency is the WebView2 runtime, which
+  ships with Windows 10 and 11. The download is larger as a result — 116 MB, up from 58 MB.
+
+### Fixed
+- `START TOOL.bat` checks for the WebView2 runtime and opens the toolkit in your browser if it is
+  missing. Previously a missing runtime left you at an error dialog with nothing happening
+  afterwards, even though the tool underneath works perfectly without it.
+- Console output is plain ASCII; an em-dash was being mangled in the command window.
+
+[0.1.1]: https://github.com/sdmart3/open-field-toolkit-releases/releases/tag/v0.1.1
+
 ## [0.1.0] — 2026-09-23
 
 First public release.

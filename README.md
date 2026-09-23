@@ -21,12 +21,11 @@ Windows SmartScreen will warn you on first run, because the app is not code-sign
 
 ### Requirements
 
-- Windows 10 or 11 (64-bit)
-- [.NET 8 Desktop Runtime](https://dotnet.microsoft.com/download/dotnet/8.0) — for the window
-- Microsoft Edge WebView2 Runtime — already present on Windows 11
+**Windows 10 or 11 (64-bit). Nothing else to install.**
 
-If either is missing, run `bin\toolkit-server.exe` instead. It serves the same interface at
-`http://localhost:7735`; keep the console window open while you use it.
+Everything the tool needs is inside the folder. The app window uses the Microsoft Edge WebView2
+runtime, which already ships with Windows 10 and 11 — and if it somehow isn't there,
+`START TOOL.bat` notices and opens the toolkit in your browser instead. Same tool, same features.
 
 ---
 
