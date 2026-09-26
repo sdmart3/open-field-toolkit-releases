@@ -3,6 +3,41 @@
 All notable changes to this project are documented here.
 Versions follow [Semantic Versioning](https://semver.org/).
 
+## [0.2.2] — 2026-09-26
+
+### Added
+- **Coach suggestions for your defense.** A defensive playbook built with the toolkit only offered
+  one suggested play in most situations, because it never got a real gameplan. **Gameplan &
+  Audibles** now works on defensive playbooks too. For each look the offense shows (normal, run,
+  pass, trips, bunch, nickel, dime, empty, goal line, prevent and more), it writes up to 20
+  suggestions from your own playbook, from the right personnel: dime and dollar fronts against four
+  and five receivers, your goal-line front at the goal line, deep coverage for prevent and Hail Mary.
+  Pick a doctrine and the mix of coverages, pressures and run fits follows its defensive side.
+  Kick and punt return suggestions are left as they are. Defensive playbooks have no audibles, so
+  none are written.
+- **Your own formation tabs on the Play Order tab.** Make as many as you like (Favorites, Red Zone,
+  anything you name), and put custom sets at the top of the game's own formations, for example a
+  "Fav Split" as the first set in Shotgun. A set from another formation keeps its own alignment.
+- **Import from a mod you built** on the Play Order tab. Lost your settings, or moving to a new copy
+  of the app? Pick the mod the tool built in your Mod Manager and your custom formations, custom sets
+  and play order come back.
+
+### Fixed
+- **Mod Stack works in the downloaded app with no setup.** It used to ask for a "one-time game
+  index" that the downloaded app could not build. It now reads the unmodded game through the Mod
+  Manager's own cache, the same way Play Order does. If the tool cannot find the Mod Manager, choose
+  its folder on the Play Order tab.
+- **Gameplan & Audibles no longer damages defensive playbooks.** Run on a defensive playbook, it used
+  to write offensive situations into it, which the game reads as different defensive looks (so a
+  kick return could come up with blitzes). If you ran it on a defensive playbook before, run it again
+  on this version to replace them.
+
+### Changed
+- More of the game's defensive play names are recognised as the right kind of call, including a few
+  the game spells oddly (Hot_Bltiz_3), so defensive call sheets describe them correctly.
+
+[0.2.2]: https://github.com/sdmart3/open-field-toolkit-releases/releases/tag/v0.2.2
+
 ## [0.2.1] — 2026-09-26
 
 ### Fixed
