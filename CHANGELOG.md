@@ -3,6 +3,25 @@
 All notable changes to this project are documented here.
 Versions follow [Semantic Versioning](https://semver.org/).
 
+## [0.2.1] — 2026-09-26
+
+### Fixed
+- **Play Order works.** Clicking **Load** on the Play Order tab showed "Cannot set properties of
+  null" and the order, Favorites and build panels never appeared. They now show once the playbook
+  loads.
+- **A clearer message when the game's own play sheet can't be read.** It used to say the tool needed
+  a "one-time game index", which was never true for the downloaded app and hid the real problem.
+  It now says what actually went wrong (for example, that the Mod Manager needs to be opened once so
+  it rebuilds its cache). If you still see an error there, please send us the new message.
+
+### Changed
+- **Roster Trim reads your dynasty's skill groups.** Which skill group each cap slot means depends on
+  the dynasty mod a dynasty runs under, and some mods re-order them. Roster Trim now works out which
+  layout a save uses and says so above the list, so the ceiling it reports for each player's job is
+  read from the right group.
+
+[0.2.1]: https://github.com/sdmart3/open-field-toolkit-releases/releases/tag/v0.2.1
+
 ## [0.2.0] — 2026-09-26
 
 ### Added
