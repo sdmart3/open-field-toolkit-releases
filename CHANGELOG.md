@@ -3,6 +3,37 @@
 All notable changes to this project are documented here.
 Versions follow [Semantic Versioning](https://semver.org/).
 
+## [0.2.0] — 2026-09-26
+
+### Added
+- **Run the offense you want, not just the one your roster suggests.** Step 2 of the Doctrine
+  Generator has an **Offensive scheme** list and a **Lean** slider. Pick Air Raid, Spread, Option,
+  Pro Style or any of the game's other offensive schemes, and set how far it outweighs your roster:
+  0% is the book your players suggest, 100% is the scheme alone, and in between keeps the run sets
+  your backs are good at. The formations it keeps, the gameplan and the call sheet all follow it.
+- The schemes are measured from the game's own scheme playbooks, not made up: Air Raid comes out
+  about 21% run, Pro Style 42%, Option 51%. Each one is described by what it does more and less of
+  than the average playbook.
+- After deriving, you see the run share three ways (your roster, the scheme, the finished book) and
+  which of your players fit the scheme or pull against it, which is useful for recruiting.
+- **Play Order** and **Favorites** tabs: set the order your sets and plays appear on the play-call
+  screen, and build your Favorites formation.
+
+### Fixed
+- **Coach suggestions no longer include plays that aren't in your gameplan.** Playbooks built by the
+  tool were carrying hidden leftover rows that the game still offered as suggestions, sometimes over
+  100 extra candidates in a single situation. Every playbook the tool builds, offense and defense,
+  now comes out clean. To clean a book made with an earlier version, run
+  **Gameplan & Audibles** on it again (offense) or rebuild it (defense).
+- **Runs were being counted as passes.** Plays the tool could not identify by name were all treated
+  as quick-game throws, including several hundred runs (slashes, split zone, veer and midline
+  option) and many deep shots. The tool now uses the game's own play type for those, so run/pass
+  mixes, formation picks and gameplans are more accurate.
+- Pass-protecting guards and centres are now recognised, so a pass-blocking line no longer pushes
+  a book toward the run.
+
+[0.2.0]: https://github.com/sdmart3/open-field-toolkit-releases/releases/tag/v0.2.0
+
 ## [0.1.3] — 2026-09-23
 
 ### Fixed
