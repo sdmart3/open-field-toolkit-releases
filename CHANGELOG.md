@@ -3,6 +3,22 @@
 All notable changes to this project are documented here.
 Versions follow [Semantic Versioning](https://semver.org/).
 
+## [0.2.3] — 2026-09-26
+
+### Added
+- **Audibles for your defense.** Gameplan & Audibles now gives every formation in a defensive
+  playbook its four audibles, the way the game's own defensive playbooks carry them: a Cover 2 or
+  Tampa 2 call, a pressure, a two-deep match coverage (Cover 4 Quarters or Cover 6) and a Cover 3.
+  Goal line, prevent, field goal block and punt return formations get the same audibles the game
+  gives them.
+
+### Fixed
+- **v0.2.2 left defensive playbooks without audibles**, and its notes said defensive playbooks
+  don't have them. They do. If you ran Gameplan & Audibles on a defensive playbook with v0.2.2, run
+  it again on this version to add them. Your coach suggestions are rewritten the same way as before.
+
+[0.2.3]: https://github.com/sdmart3/open-field-toolkit-releases/releases/tag/v0.2.3
+
 ## [0.2.2] — 2026-09-26
 
 ### Added
