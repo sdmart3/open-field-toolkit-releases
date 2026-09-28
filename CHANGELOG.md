@@ -3,6 +3,23 @@
 All notable changes to this project are documented here.
 Versions follow [Semantic Versioning](https://semver.org/).
 
+## [0.2.4] — 2026-09-27
+
+### Added
+- **Remove plays from a playbook** on the Play Order tab. The cross on any play (or a whole set)
+  marks it; **Remove from playbook** rebuilds your playbook without them. Every other play keeps its
+  place, its audibles and its coach suggestions, a set left empty goes too, and the old file is
+  backed up first. Close the game before removing. Special-teams sets can't be emptied.
+
+### Fixed
+- **Play Order and Mod Stack work with Mod Manager 1.1.0.5.** Its cache is laid out differently, and
+  the tool failed with "offset out of range" whenever 1.1.0.5 was the newest Mod Manager on your
+  PC. Both the old and the new Mod Manager now work, with identical results.
+- **Mods whose unchanged parts are only registered** (JMU Revamped 2.2 is one) now read and rebuild
+  correctly.
+
+[0.2.4]: https://github.com/sdmart3/open-field-toolkit-releases/releases/tag/v0.2.4
+
 ## [0.2.3] — 2026-09-26
 
 ### Added
